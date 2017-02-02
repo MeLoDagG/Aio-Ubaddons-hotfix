@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B6DD4B2-B692-40E9-8E4F-B0DA78B3C31F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UBAddons</RootNamespace>
+    <AssemblyName>UBAddons</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EloBuddy">
+      <HintPath>..\..\..\..\..\Desktop\EloBuddyconsole\EloBuddy\System\EloBuddy.dll</HintPath>
+    </Reference>
+    <Reference Include="EloBuddy.Sandbox">
+      <HintPath>..\..\..\..\..\Desktop\EloBuddyconsole\EloBuddy\System\EloBuddy.Sandbox.dll</HintPath>
+    </Reference>
+    <Reference Include="EloBuddy.SDK">
+      <HintPath>..\..\..\..\..\Desktop\EloBuddyconsole\EloBuddy\System\EloBuddy.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Desktop\EloBuddyconsole\EloBuddy\System\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\..\..\..\Desktop\EloBuddyconsole\EloBuddy\System\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9">
+      <HintPath>..\..\..\..\..\Desktop\EloBuddyconsole\EloBuddy\System\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XInput">
+      <HintPath>..\..\..\..\..\Desktop\EloBuddyconsole\EloBuddy\System\SharpDX.XInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Champions\Ahri\Ahri.cs" />
+    <Compile Include="Champions\Ahri\Modes\Combo.cs" />
+    <Compile Include="Champions\Ahri\Modes\Flee.cs" />
+    <Compile Include="Champions\Ahri\Modes\Harass.cs" />
+    <Compile Include="Champions\Ahri\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Ahri\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Ahri\Modes\LastHit.cs" />
+    <Compile Include="Champions\Ahri\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Alistar\Alistar.cs" />
+    <Compile Include="Champions\Alistar\Modes\Combo.cs" />
+    <Compile Include="Champions\Alistar\Modes\Flee.cs" />
+    <Compile Include="Champions\Alistar\Modes\Harass.cs" />
+    <Compile Include="Champions\Alistar\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Alistar\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Alistar\Modes\LastHit.cs" />
+    <Compile Include="Champions\Alistar\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Amumu\Amumu.cs" />
+    <Compile Include="Champions\Amumu\Modes\Combo.cs" />
+    <Compile Include="Champions\Amumu\Modes\Flee.cs" />
+    <Compile Include="Champions\Amumu\Modes\Harass.cs" />
+    <Compile Include="Champions\Amumu\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Amumu\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Amumu\Modes\LastHit.cs" />
+    <Compile Include="Champions\Amumu\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Anivia\Anivia.cs" />
+    <Compile Include="Champions\Anivia\Modes\Combo.cs" />
+    <Compile Include="Champions\Anivia\Modes\Flee.cs" />
+    <Compile Include="Champions\Anivia\Modes\Harass.cs" />
+    <Compile Include="Champions\Anivia\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Anivia\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Anivia\Modes\LastHit.cs" />
+    <Compile Include="Champions\Anivia\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Annie\Annie.cs" />
+    <Compile Include="Champions\Annie\Modes\Combo.cs" />
+    <Compile Include="Champions\Annie\Modes\Flee.cs" />
+    <Compile Include="Champions\Annie\Modes\Harass.cs" />
+    <Compile Include="Champions\Annie\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Annie\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Annie\Modes\LastHit.cs" />
+    <Compile Include="Champions\Annie\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Azir\Azir.cs" />
+    <Compile Include="Champions\Azir\Modes\Combo.cs" />
+    <Compile Include="Champions\Azir\Modes\Flee.cs" />
+    <Compile Include="Champions\Azir\Modes\Harass.cs" />
+    <Compile Include="Champions\Azir\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Azir\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Azir\Modes\LastHit.cs" />
+    <Compile Include="Champions\Azir\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Brand\Brand.cs" />
+    <Compile Include="Champions\Brand\Modes\Combo.cs" />
+    <Compile Include="Champions\Brand\Modes\Flee.cs" />
+    <Compile Include="Champions\Brand\Modes\Harass.cs" />
+    <Compile Include="Champions\Brand\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Brand\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Brand\Modes\LastHit.cs" />
+    <Compile Include="Champions\Brand\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Cassiopeia\Cassiopeia.cs" />
+    <Compile Include="Champions\Cassiopeia\Modes\Combo.cs" />
+    <Compile Include="Champions\Cassiopeia\Modes\Flee.cs" />
+    <Compile Include="Champions\Cassiopeia\Modes\Harass.cs" />
+    <Compile Include="Champions\Cassiopeia\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Cassiopeia\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Cassiopeia\Modes\LastHit.cs" />
+    <Compile Include="Champions\Cassiopeia\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Ekko\Ekko.cs" />
+    <Compile Include="Champions\Ekko\Modes\Combo.cs" />
+    <Compile Include="Champions\Ekko\Modes\Flee.cs" />
+    <Compile Include="Champions\Ekko\Modes\Harass.cs" />
+    <Compile Include="Champions\Ekko\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Ekko\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Ekko\Modes\LastHit.cs" />
+    <Compile Include="Champions\Ekko\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Karma\Karma.cs" />
+    <Compile Include="Champions\Karma\Modes\Combo.cs" />
+    <Compile Include="Champions\Karma\Modes\Flee.cs" />
+    <Compile Include="Champions\Karma\Modes\Harass.cs" />
+    <Compile Include="Champions\Karma\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Karma\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Karma\Modes\LastHit.cs" />
+    <Compile Include="Champions\Karma\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Karthus\Karthus.cs" />
+    <Compile Include="Champions\Karthus\Modes\Combo.cs" />
+    <Compile Include="Champions\Karthus\Modes\Flee.cs" />
+    <Compile Include="Champions\Karthus\Modes\Harass.cs" />
+    <Compile Include="Champions\Karthus\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Karthus\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Karthus\Modes\LastHit.cs" />
+    <Compile Include="Champions\Karthus\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Kassadin\Kassadin.cs" />
+    <Compile Include="Champions\Kassadin\Modes\Combo.cs" />
+    <Compile Include="Champions\Kassadin\Modes\Flee.cs" />
+    <Compile Include="Champions\Kassadin\Modes\Harass.cs" />
+    <Compile Include="Champions\Kassadin\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Kassadin\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Kassadin\Modes\LastHit.cs" />
+    <Compile Include="Champions\Kassadin\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Katarina\Katarina.cs" />
+    <Compile Include="Champions\Katarina\Modes\Combo.cs" />
+    <Compile Include="Champions\Katarina\Modes\Flee.cs" />
+    <Compile Include="Champions\Katarina\Modes\Harass.cs" />
+    <Compile Include="Champions\Katarina\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Katarina\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Katarina\Modes\LastHit.cs" />
+    <Compile Include="Champions\Katarina\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Kayle\Kayle.cs" />
+    <Compile Include="Champions\Kayle\Modes\Combo.cs" />
+    <Compile Include="Champions\Kayle\Modes\Flee.cs" />
+    <Compile Include="Champions\Kayle\Modes\Harass.cs" />
+    <Compile Include="Champions\Kayle\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Kayle\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Kayle\Modes\LastHit.cs" />
+    <Compile Include="Champions\Kayle\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Kennen\Kennen.cs" />
+    <Compile Include="Champions\Kennen\Modes\Combo.cs" />
+    <Compile Include="Champions\Kennen\Modes\Flee.cs" />
+    <Compile Include="Champions\Kennen\Modes\Harass.cs" />
+    <Compile Include="Champions\Kennen\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Kennen\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Kennen\Modes\LastHit.cs" />
+    <Compile Include="Champions\Kennen\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Lissandra\Lissandra.cs" />
+    <Compile Include="Champions\Lissandra\Modes\Combo.cs" />
+    <Compile Include="Champions\Lissandra\Modes\Flee.cs" />
+    <Compile Include="Champions\Lissandra\Modes\Harass.cs" />
+    <Compile Include="Champions\Lissandra\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Lissandra\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Lissandra\Modes\LastHit.cs" />
+    <Compile Include="Champions\Lissandra\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Lulu\Lulu.cs" />
+    <Compile Include="Champions\Lulu\Modes\Combo.cs" />
+    <Compile Include="Champions\Lulu\Modes\Flee.cs" />
+    <Compile Include="Champions\Lulu\Modes\Harass.cs" />
+    <Compile Include="Champions\Lulu\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Lulu\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Lulu\Modes\LastHit.cs" />
+    <Compile Include="Champions\Lulu\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Malzahar\Malzahar.cs" />
+    <Compile Include="Champions\Malzahar\Modes\Combo.cs" />
+    <Compile Include="Champions\Malzahar\Modes\Flee.cs" />
+    <Compile Include="Champions\Malzahar\Modes\Harass.cs" />
+    <Compile Include="Champions\Malzahar\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Malzahar\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Malzahar\Modes\LastHit.cs" />
+    <Compile Include="Champions\Malzahar\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Orianna\Modes\Combo.cs" />
+    <Compile Include="Champions\Orianna\Modes\Flee.cs" />
+    <Compile Include="Champions\Orianna\Modes\Harass.cs" />
+    <Compile Include="Champions\Orianna\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Orianna\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Orianna\Modes\LastHit.cs" />
+    <Compile Include="Champions\Orianna\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Orianna\Orianna.cs" />
+    <Compile Include="Champions\Ryze\Modes\Combo.cs" />
+    <Compile Include="Champions\Ryze\Modes\Flee.cs" />
+    <Compile Include="Champions\Ryze\Modes\Harass.cs" />
+    <Compile Include="Champions\Ryze\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Ryze\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Ryze\Modes\LastHit.cs" />
+    <Compile Include="Champions\Ryze\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Ryze\Ryze.cs" />
+    <Compile Include="Champions\Syndra\Modes\Combo.cs" />
+    <Compile Include="Champions\Syndra\Modes\Flee.cs" />
+    <Compile Include="Champions\Syndra\Modes\Harass.cs" />
+    <Compile Include="Champions\Syndra\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Syndra\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Syndra\Modes\LastHit.cs" />
+    <Compile Include="Champions\Syndra\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Syndra\Syndra.cs" />
+    <Compile Include="Champions\Taliyah\Modes\Combo.cs" />
+    <Compile Include="Champions\Taliyah\Modes\Flee.cs" />
+    <Compile Include="Champions\Taliyah\Modes\Harass.cs" />
+    <Compile Include="Champions\Taliyah\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Taliyah\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Taliyah\Modes\LastHit.cs" />
+    <Compile Include="Champions\Taliyah\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Taliyah\Taliyah.cs" />
+    <Compile Include="Champions\TwistedFate\Modes\Combo.cs" />
+    <Compile Include="Champions\TwistedFate\Modes\Flee.cs" />
+    <Compile Include="Champions\TwistedFate\Modes\Harass.cs" />
+    <Compile Include="Champions\TwistedFate\Modes\JungleClear.cs" />
+    <Compile Include="Champions\TwistedFate\Modes\LaneClear.cs" />
+    <Compile Include="Champions\TwistedFate\Modes\LastHit.cs" />
+    <Compile Include="Champions\TwistedFate\Modes\PermaActive.cs" />
+    <Compile Include="Champions\TwistedFate\TwistedFate.cs" />
+    <Compile Include="Champions\Twitch\Modes\Combo.cs" />
+    <Compile Include="Champions\Twitch\Modes\Flee.cs" />
+    <Compile Include="Champions\Twitch\Modes\Harass.cs" />
+    <Compile Include="Champions\Twitch\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Twitch\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Twitch\Modes\LastHit.cs" />
+    <Compile Include="Champions\Twitch\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Twitch\Twitch.cs" />
+    <Compile Include="Champions\Veigar\Modes\Combo.cs" />
+    <Compile Include="Champions\Veigar\Modes\Flee.cs" />
+    <Compile Include="Champions\Veigar\Modes\Harass.cs" />
+    <Compile Include="Champions\Veigar\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Veigar\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Veigar\Modes\LastHit.cs" />
+    <Compile Include="Champions\Veigar\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Veigar\Veigar.cs" />
+    <Compile Include="Champions\Velkoz\Modes\Combo.cs" />
+    <Compile Include="Champions\Velkoz\Modes\Flee.cs" />
+    <Compile Include="Champions\Velkoz\Modes\Harass.cs" />
+    <Compile Include="Champions\Velkoz\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Velkoz\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Velkoz\Modes\LastHit.cs" />
+    <Compile Include="Champions\Velkoz\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Velkoz\Velkoz.cs" />
+    <Compile Include="Champions\Viktor\Modes\Combo.cs" />
+    <Compile Include="Champions\Viktor\Modes\Flee.cs" />
+    <Compile Include="Champions\Viktor\Modes\Harass.cs" />
+    <Compile Include="Champions\Viktor\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Viktor\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Viktor\Modes\LastHit.cs" />
+    <Compile Include="Champions\Viktor\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Viktor\Viktor.cs" />
+    <Compile Include="Champions\Xerath\Modes\Combo.cs" />
+    <Compile Include="Champions\Xerath\Modes\Flee.cs" />
+    <Compile Include="Champions\Xerath\Modes\Harass.cs" />
+    <Compile Include="Champions\Xerath\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Xerath\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Xerath\Modes\LastHit.cs" />
+    <Compile Include="Champions\Xerath\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Xerath\Xerath.cs" />
+    <Compile Include="Champions\Ziggs\Modes\Combo.cs" />
+    <Compile Include="Champions\Ziggs\Modes\Flee.cs" />
+    <Compile Include="Champions\Ziggs\Modes\Harass.cs" />
+    <Compile Include="Champions\Ziggs\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Ziggs\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Ziggs\Modes\LastHit.cs" />
+    <Compile Include="Champions\Ziggs\Modes\PermaActive.cs" />
+    <Compile Include="Champions\Ziggs\Ziggs.cs" />
+    <Compile Include="Champions\Zilean\Zilean.cs" />
+    <Compile Include="Champions\Zilean\Modes\Combo.cs" />
+    <Compile Include="Champions\Zilean\Modes\Flee.cs" />
+    <Compile Include="Champions\Zilean\Modes\Harass.cs" />
+    <Compile Include="Champions\Zilean\Modes\JungleClear.cs" />
+    <Compile Include="Champions\Zilean\Modes\LaneClear.cs" />
+    <Compile Include="Champions\Zilean\Modes\LastHit.cs" />
+    <Compile Include="Champions\Zilean\Modes\PermaActive.cs" />
+    <Compile Include="Libs\Base\IModuleBase.cs" />
+    <Compile Include="Libs\Dictionary\VectorHelper.cs" />
+    <Compile Include="Libs\FPS_Protect.cs" />
+    <Compile Include="Libs\ImmobileTracker.cs" />
+    <Compile Include="Libs\Plugin\UtilityPlugin.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UBCore\Activator\AttackItem.cs" />
+    <Compile Include="UBCore\Activator\Cleanse.cs" />
+    <Compile Include="UBCore\Activator\DefenseItem.cs" />
+    <Compile Include="UBCore\Activator\ItemDamage.cs" />
+    <Compile Include="UBCore\Activator\ItemList.cs" />
+    <Compile Include="UBCore\Activator\Main.cs" />
+    <Compile Include="UBCore\Activator\Spells.cs" />
+    <Compile Include="UBCore\Activator\SpellsList\SpellsList.cs" />
+    <Compile Include="UBCore\Activator\Utility.cs" />
+    <Compile Include="UBCore\ADOrbwalker\Main.cs" />
+    <Compile Include="UBCore\AutoLv\AutoLv.cs" />
+    <Compile Include="UBCore\AutoLv\Data.cs" />
+    <Compile Include="UBCore\AutoLv\Database.cs" />
+    <Compile Include="UBCore\AutoLv\FileHandle.cs" />
+    <Compile Include="UBCore\BaseUlt\BaseUlt.cs" />
+    <Compile Include="UBCore\BaseUlt\Data.cs" />
+    <Compile Include="UBCore\BaseUlt\Database.cs" />
+    <Compile Include="UBCore\BaseUlt\TextureDraw.cs" />
+    <Compile Include="UBCore\CoreMenu.cs" />
+    <Compile Include="General\UBDrawings.cs" />
+    <Compile Include="Libs\Dictionary\JumpSpot.cs" />
+    <Compile Include="Log\Debug.cs" />
+    <Compile Include="Log\Notification.cs" />
+    <Compile Include="General\Enums.cs" />
+    <Compile Include="General\Structs.cs" />
+    <Compile Include="General\Variables.cs" />
+    <Compile Include="Libs\Base\IHeroBase.cs" />
+    <Compile Include="Libs\Plugin\ChampionPlugin.cs" />
+    <Compile Include="Libs\ColorPicker\ColorPicker.cs" />
+    <Compile Include="Libs\ColorPicker\ColorReader.cs" />
+    <Compile Include="Libs\DamageIndicator.cs" />
+    <Compile Include="Libs\Dictionary\FleeSpell.cs" />
+    <Compile Include="Libs\Extensions.cs" />
+    <Compile Include="Libs\CrazyTargetSelector.cs" />
+    <Compile Include="Log\UpdateChecker.cs" />
+    <Compile Include="UBAddons.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Champions\Akali\" />
+    <Folder Include="Champions\AurelionSol\" />
+    <Folder Include="Champions\Chogath\" />
+    <Folder Include="Champions\Fizz\" />
+    <Folder Include="Champions\Gangplank\" />
+    <Folder Include="Champions\Gnar\" />
+    <Folder Include="Champions\Leblanc\" />
+    <Folder Include="Champions\Lux\" />
+    <Folder Include="Champions\Swain\" />
+    <Folder Include="Champions\Talon\" />
+    <Folder Include="Champions\Vladimir\" />
+    <Folder Include="Champions\Warwick\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar.png" />
+    <None Include="Resources\HUD.png" />
+    <Content Include="Resources\Notification_Blue.png" />
+    <Content Include="Resources\Notification_Notification.png" />
+    <None Include="Resources\Notification_Recall.png" />
+    <Content Include="Resources\Notification_Updated.png" />
+    <Content Include="Resources\Notification_Error.png" />
+    <Content Include="Resources\Notification_Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
